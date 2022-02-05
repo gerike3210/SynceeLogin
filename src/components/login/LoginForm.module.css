@@ -1,0 +1,91 @@
+.container {
+    background-color: white;
+}
+
+form {
+    width: 450px;
+}
+
+.form-control {
+    margin-bottom: 14px;
+}
+
+.form-control label,
+.form-control input {
+    display: block;
+}
+
+.form-control label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-control input {
+    padding: 12px;
+    border-radius: 100px;
+    border: 1px solid rgb(184, 184, 184);
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: none;
+}
+
+.remember {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+.remember-col {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: start;
+    column-gap: 6px;
+}
+
+button {
+    background-color: #5137f0;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 100px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+button:hover {
+    background-color: #654ff3;
+}
+
+.invalid input {
+    border: 1px solid #b40e0e;
+    background-color: #fddddd;
+}
+
+.error {
+    color: #ff5f5f;
+    display: block;
+    font-size: 12px;
+    padding: 3px 0 0 12px;
+}
+
+.forgotpw {
+    font-size: 14px;
+}
+
+.createaccount {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #5137f0;
+    font-weight: 600;
+}
