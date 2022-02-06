@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from "react-redux";
-import LoggedInPage from "../login/LoggedInPage";
 import LoginForm from "../login/LoginForm";
 import synceeLogo from "../../img/syncee-logo-300px.png";
 
@@ -50,7 +49,9 @@ const Page = () => {
                         )}
                     />
                 </header>
-                <main>{isLoggedIn ? <LoggedInPage /> : <LoginForm />}</main>
+                <main>
+                    <LoginForm />
+                </main>
                 <footer>
                     <p className={classes["footer-text"]}>
                         2022 Syncee. All rights reserved.
@@ -61,7 +62,17 @@ const Page = () => {
         </div>
     );
 
-    return <>{isLoggedIn ? `${loggedInEmail} ${userObj}` : content}</>;
+    return (
+        <>
+            {isLoggedIn ? (
+                <div
+                    className={classes["logged-text"]}
+                >{`${loggedInEmail} ${userObj}`}</div>
+            ) : (
+                content
+            )}
+        </>
+    );
 };
 
 export default Page;
