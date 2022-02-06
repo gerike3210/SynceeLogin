@@ -16,15 +16,16 @@ form {
 }
 
 .form-control label {
-    margin-bottom: 0.7rem;
     font-size: 1.6rem;
+    margin-bottom: 0.7rem;
 }
 
 .form-control input {
-    padding: 1.5rem;
-    border-radius: 100rem;
-    border: 0.1rem solid rgb(184, 184, 184);
     width: 100%;
+    font-size: 1.5rem;
+    border: 0.1rem solid rgb(184, 184, 184);
+    border-radius: 100rem;
+    padding: 1.5rem;
 }
 
 .form-control input:focus {
@@ -32,11 +33,12 @@ form {
 }
 
 .remember {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: space-between;
-    margin-bottom: 3rem;
-    font-size: 1.6rem;
 }
 
 .remember-col {
@@ -48,11 +50,11 @@ form {
 }
 
 button {
+    width: 100%;
     background-color: #5137f0;
     color: white;
     font-size: 1.6rem;
     font-weight: 600;
-    width: 100%;
     border: none;
     border-radius: 100rem;
     padding: 1.4rem;
@@ -80,9 +82,9 @@ button:hover {
 }
 
 .createaccount {
+    display: inline-block;
     font-size: 1.3rem;
     font-weight: 500;
-    display: inline-block;
     margin-bottom: 4rem;
 }
 
