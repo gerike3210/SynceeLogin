@@ -27,6 +27,9 @@ const LoginForm = () => {
         if (enteredEmail.match(EMAIL_FORMAT)) {
             setEmailValidity(true);
         }
+        if (!enteredEmail.match(EMAIL_FORMAT)) {
+            setEmailValidity(false);
+        }
         if (enteredPassword.match(PASSWORD_FORMAT)) {
             setPasswordValidity(true);
         }
