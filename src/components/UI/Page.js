@@ -49,6 +49,7 @@ const Page = () => {
                         )}
                     />
                 </header>
+                <h3>or Sign in with Email</h3>
                 <main>
                     <LoginForm />
                 </main>

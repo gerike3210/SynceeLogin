@@ -1,7 +1,11 @@
 .container {
     background-color: #fff;
     width: 130rem;
-    margin: 8rem auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     display: grid;
     grid-template-columns: repeat(2, 65rem);
@@ -11,10 +15,11 @@
 
 .col-login {
     padding: 3rem 5rem;
+    margin: 0 auto;
 }
 
 .login-header {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .login-header h1 {
@@ -29,14 +34,14 @@
 }
 
 .col-login img {
-    width: 13rem;
-    margin-bottom: 2.5rem;
+    width: 12rem;
+    margin-bottom: 4rem;
 }
 
 .googlelogin {
     background-color: #fff;
     color: black;
-
+    width: 40rem;
     display: flex;
     justify-content: center;
     border: 0.1rem solid rgb(184, 184, 184);
@@ -60,6 +65,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+}
+
+h3 {
+    display: flex;
+    flex-direction: row;
+    color: rgb(184, 184, 184);
+    margin-bottom: 3rem;
+}
+
+h3::before,
+h3::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid rgb(184, 184, 184);
+    margin: auto 0.7rem;
 }
 
 main {
